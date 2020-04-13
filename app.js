@@ -3,7 +3,7 @@
 function buildPlots(id) {
 
   // Fetch the JSON data and console log it
-  d3.json("../data/samples.json").then((data) => {
+  d3.json("https://github.com/anishaa95/Plot.ly-Challenge/data/samples.json").then((data) => {
     console.log(data);
 
     // Grab values from the data json object to build the plots
