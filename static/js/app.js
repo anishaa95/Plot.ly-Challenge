@@ -100,13 +100,12 @@ function optionChanged(id) {
 
 //Function to render data
 function init() {
-
-  //selection of the drop down menu
-  var dropdownmenu = d3.select("#selDataset");
-
   //reading the data
   d3.json("../data/samples.json").then((data) => {
     console.log(data)
+
+    //selection of the drop down menu
+    var dropdownmenu = d3.select("#selDataset");
 
     //set ids as options on the dropdown menu
     data.names.forEach(function (name) {
